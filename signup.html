@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Car Parts Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="site-title">
+                <h1>CarsAndParts.Com</h1>
+            </div>
+            <div class="search-area">
+                <form action="#" method="GET">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="signup.html">Sign-Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="signup-section">
+            <h2>Sign Up</h2>
+            <form action="#" method="POST" class="signup-form">
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" name="firstname" required><br><br>
+                
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname" name="lastname" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br><br>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+                
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="4" required></textarea><br><br>
+                
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required><br><br>
+                
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="UK">United Kingdom</option>
+                    <!-- Add more options as needed -->
+                </select><br><br>
+                
+                <label for="zipcode">ZIP Code:</label>
+                <input type="text" id="zipcode" name="zipcode" required><br><br>
+                
+                <label for="birthdate">Birthdate:</label>
+                <input type="date" id="birthdate" name="birthdate" required><br><br>
+                
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+                
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+    <div class="footer-content">
+        <section class="sponsors-payment">
+            <div class="container">
+                <div class="sponsors">
+                    <p>Our Sponsors</p>
+                    <ul class="sponsor-list">
+                        <li><img src="BMW.png" alt="Sponsor 1"></li>
+                        <li><img src="merc.jpeg" alt="Sponsor 2"></li>
+                        <li><img src="Mazda-Logo.png" alt="Sponsor 3"></li>
+                    </ul>
+                </div>
+                <div class="payment-methods">
+                    <p>Accepted Payment Methods</p>
+                    <ul class="payment-list">
+                        <li><img src="paypal.png" alt="Payment Method 1"></li>
+                        <li><img src="footer2.png" alt="Payment Method 2"></li>
+                        <li><img src="footer4.png" alt="Payment Method 3"></li>
+                        <!-- Add more payment methods as needed -->
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="copyright">
+            <p>&copy; 2024 Car Parts Shop. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,304 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #D3D3D3; 
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #FF8C00; 
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.site-title h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px; /* Reduced gap between navbar items */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 15px; /* Smaller padding for navbar links */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.background-image {
+    background-image: url('shop.png'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-description {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.site-description p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0;
+}
+
+.photo-ideas,
+.featured-products {
+    text-align: center; /* Center align the content */
+    margin-top: 140px;
+    margin-bottom: 140px; /* Adjust margin top as needed */
+}
+
+.featured-products h2 {
+    color: #333; /* Dark gray color for the heading */
+    font-family: 'Arial', sans-serif; /* Example of a better font-family */
+    font-weight: bold; /* Ensure the heading is bold */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.photo-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.photo-grid img {
+    width: 200px; /* Adjust image size */
+    height: 200px; /* Adjust image size */
+    border-radius: 10px; /* Rounded corners for images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    transition: transform 0.3s ease;
+}
+
+.photo-grid img:hover {
+    transform: translateY(-5px); /* Hover effect */
+}
+
+.footer-content {
+    background-color: #000; /* Black background for footer content */
+    padding: 20px 0; /* Padding top and bottom */
+    text-align: center;
+    color: #fff; /* White text color */
+}
+
+.sponsors-payment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sponsors,
+.payment-methods {
+    margin-bottom: 20px; /* Space between sponsors and payment methods */
+}
+
+.sponsors p,
+.payment-methods p {
+    font-size: 14px; /* Smaller font size */
+    color: #FF8C00; /* Orange text color */
+    margin-bottom: 8px; /* Bottom margin */
+}
+
+.sponsor-list,
+.payment-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; /* Add margin to separate from heading */
+}
+
+.sponsor-list img,
+.payment-list img {
+    width: 70px; /* Set width of images */
+    height: 35px; /* Set height of images */
+    margin: 0 5px; /* Adjust spacing between images */
+}
+
+/* Contact Form Styles */
+
+.contact-form {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.contact-form h2 {
+    color: #333; /* Dark gray color for headings */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333; /* Dark gray color for labels */
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="password"],
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    height: 150px; /* Adjust height of the textarea */
+}
+
+.contact-form button {
+    padding: 12px 20px;
+    background-color: #FF8C00; /* Orange button background */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.contact-form button:hover {
+    background-color: #FFA533; /* Lighter shade of orange on hover */
+}
+
+/* Signup Form Styles */
+
+.signup-form {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.signup-form h2 {
+    color: #333; /* Dark gray color for headings */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signup-form .form-group {
+    margin-bottom: 20px;
+}
+
+.signup-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333; /* Dark gray color for labels */
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.signup-form button {
+    padding: 12px 20px;
+    background-color: #FF8C00; /* Orange button background */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.signup-form button:hover {
+    background-color: #FFA533; /* Lighter shade of orange on hover */
+}
+.products {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    width: calc(33.33% - 20px);
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 1rem;
+    color: #666;
+}
